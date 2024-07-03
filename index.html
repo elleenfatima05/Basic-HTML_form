@@ -5,35 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
+  <style>
+    *{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        
+
+    }
+    input{
+        height: 20px;
+        width: 150px;
+    }
+    
+  </style>
   <body>
     <div class="main" style="text-align: center">
       <h1>Registration form</h1>
-      <form>
-        <div class="name">
-          <h4>Name:</h4>
-          <input type="text" placeholder=" Enter your name" />
-        </div>
-        <div class="email">
-          <h4>Email:</h4>
-          <input type="email" placeholder="Enter Your Email here" />
-        </div>
-        <div class="password">
-          <h4>Password:</h4>
-          <input type="password" placeholder="Enter password here" />
-        </div>
-        <div class="gender">
-          <h4>Gender:</h4>
-          <input type="radio" value="Male" />
-          <label for="male">Male</label>
-          <br />
-          <input type="radio" value="Female" />
-          <label for="Female">Female</label>
-        </div>
-        <div class="number">
-          <h4>Number:</h4>
-          <input type="tel" placeholder="300-123-456-8" />
-        </div>
+      <center>
+      <form style="font-size: 20px;">
+        <table>
+            <tr>
+                <td>Full Name</td>
+                <td><input type="text"
+                    placeholder="Enter your name here"></td>
+            </tr> 
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" 
+                    placeholder="Enter Email here"></td>
+            </tr><br> <br> <br>
+            <tr>
+                <td>Gender:</td>
+                <td><input type="radio" style="width: 30px; height:18px";>
+                    <label for="">male</label>
+                    <input type="radio" style="width: 30px; height:18px";>
+                    <label for="">Female</label></td>
+            </tr>
+            <tr>
+                <td>Phone number:</td>
+                <td> <select>
+                    <option value="">+92</option>
+                    <option value="">+77</option>
+                    <option value="">+98</option>
+                    <option value="">+97</option>
+                </select> <input type="tel" placeholder="300-123-456-7"></td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" placeholder="Enter your password here"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Submit" style="height:28px;"></td>
+            </tr>
+        </table>
       </form>
+      </form>
+    </center>
     </div>
   </body>
 </html>
